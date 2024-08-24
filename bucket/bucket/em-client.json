@@ -3,6 +3,11 @@
     "description": "A full featured email client with a modern and easy to use interface.",
     "homepage": "https://www.emclient.com/",
     "license": "Freeware",
+    "notes": [
+        "Scoop doesn't persist your EmClient data, by default they are stored in:",
+        "'%AppData%\\eM Client'.",
+        "You can point to the persist storage in 'Settings > General > Storage'."
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.emclient.com/dist/v10.0.3530/setup.msi",
@@ -15,6 +20,9 @@
             "MailClient.exe",
             "eM Client"
         ]
+    ],
+    "persist": [
+        "data"
     ],
     "checkver": {
         "url": "https://www.emclient.com/release-history?os=win",
