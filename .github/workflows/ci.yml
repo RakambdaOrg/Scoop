@@ -7,11 +7,13 @@ on:
 
 jobs:
   test_shell:
-    name: Test shell
+    name: Test shell ${{ matrix.shell }}
     runs-on: windows-latest
     strategy:
       matrix:
-        shell: [ powershell, pwsh ]
+        shell:
+          - powershell
+          - pwsh
     steps:
       - name: Checkout Bucket
         uses: actions/checkout@v4.1.7
