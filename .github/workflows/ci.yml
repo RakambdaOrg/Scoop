@@ -14,6 +14,9 @@ jobs:
         shell:
           - powershell
           - pwsh
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
     steps:
       - name: Checkout Bucket
         uses: actions/checkout@v4.1.7
@@ -26,7 +29,6 @@ jobs:
           repository: ScoopInstaller/Scoop
           path: 'scoop_core'
       - name: Init and Test on ${{ matrix.shell }}
-        shell: ${{ matrix.shell }}
         run: |
           $env:SCOOP_HOME="$(Convert-Path '.\scoop_core')"
           .\scoop_core\test\bin\init.ps1
