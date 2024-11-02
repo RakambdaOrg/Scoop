@@ -1,0 +1,34 @@
+{
+    "homepage": "https://github.com/TagStudioDev/TagStudio",
+    "version": "v9.4.1",
+    "description": "A User-Focused Photo & File Management System",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TagStudioDev/TagStudio/releases/download/v9.4.1/tagstudio_windows_x86_64_portable.zip#/dl.7z",
+            "hash": "d542d78397bbed8e77c221f36cad461a0d83f1263b993a7048e81df40f403fb8"
+        }
+    },
+    "bin": [
+        "TagStudio.exe"
+    ],
+    "shortcuts": [
+        [
+            "TagStudio.exe",
+            "TagStudio"
+        ]
+    ],
+    "persist": [
+    ],
+    "checkver": {
+        "url": "https://github.com/TagStudioDev/TagStudio/releases",
+        "jsonpath": "$[0].tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TagStudioDev/TagStudio/releases/download/$version/tagstudio_windows_x86_64_portable.zip#/dl.7z"
+            }
+        }
+    }
+}
