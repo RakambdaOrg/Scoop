@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/TagStudioDev/TagStudio/releases/download/v9.4.1/tagstudio_windows_x86_64_portable.zip#/dl.7z",
-            "hash": "d542d78397bbed8e77c221f36cad461a0d83f1263b993a7048e81df40f403fb8"
+            "hash": "5d5b172f4be54faa8fa9042951bfb519f6e93faaaaef1b563ef73c1fc17ef0db"
         }
     },
     "bin": [
