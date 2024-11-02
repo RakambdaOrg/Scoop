@@ -18,8 +18,6 @@
             "TagStudio"
         ]
     ],
-    "persist": [
-    ],
     "checkver": {
         "url": "https://github.com/TagStudioDev/TagStudio/releases",
         "jsonpath": "$[0].tag_name"
