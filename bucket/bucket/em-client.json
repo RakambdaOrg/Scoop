@@ -1,7 +1,7 @@
 {
+    "homepage": "https://www.emclient.com/",
     "version": "10.1.4417",
     "description": "A full featured email client with a modern and easy to use interface.",
-    "homepage": "https://www.emclient.com/",
     "license": "Freeware",
     "notes": [
         "Scoop doesn't persist your EmClient data, by default they are stored in:",
