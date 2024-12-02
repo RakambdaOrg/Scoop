@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/8LWXpg/ptr/releases/download/v0.8.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
-            "hash": "5d5b172f4be54faa8fa9042951bfb519f6e93faaaaef1b563ef73c1fc17ef0db"
+            "hash": "152be69192315f21d93272d4cf65840c36dad3fcf3edc0d569c18651ba0c1b1a"
         }
     },
     "bin": [
