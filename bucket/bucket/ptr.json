@@ -1,17 +1,15 @@
 {
     "homepage": "https://github.com/8LWXpg/ptr",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "description": "PowerToys Run plugin manager",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.8.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
-            "hash": "152be69192315f21d93272d4cf65840c36dad3fcf3edc0d569c18651ba0c1b1a"
+            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.9.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
+            "hash": "d234e6052d9194d83cfd552079c6b14bb87a115edd37fbcc6d4e11f204967dab"
         }
     },
-    "bin": [
-        "ptr.exe"
-    ],
+    "bin": "ptr.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
