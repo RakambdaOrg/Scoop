@@ -8,13 +8,9 @@
         "'%AppData%\\eM Client'.",
         "You can point to the persist storage in 'Settings > General > Storage'."
     ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.emclient.com/dist/v10.1.4588/setup.msi",
-            "hash": "ac537b11881cef1b416f2f0be94cb9591f39c9954f515b319abc248afbc78a4d",
-            "extract_dir": "PFiles\\eM Client"
-        }
-    },
+    "url": "https://www.emclient.com/dist/v10.1.4588/setup.msi",
+    "hash": "ac537b11881cef1b416f2f0be94cb9591f39c9954f515b319abc248afbc78a4d",
+    "extract_dir": "PFiles\\eM Client",
     "shortcuts": [
         [
             "MailClient.exe",
@@ -27,10 +23,6 @@
         "regex": "\\<strong\\>\\s+.*?([\\d.]+)\\.0"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.emclient.com/dist/v$version/setup.msi"
-            }
-        }
+        "url": "https://www.emclient.com/dist/v$version/setup.msi"
     }
 }
