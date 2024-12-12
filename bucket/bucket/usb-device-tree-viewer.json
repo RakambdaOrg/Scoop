@@ -10,7 +10,7 @@
             "bin": "x64\\UsbTreeView.exe",
             "shortcuts": [
                 [
-                    "UsbTreeView.exe",
+                    "x64\\UsbTreeView.exe",
                     "USB Device Tree Viewer"
                 ]
             ]
