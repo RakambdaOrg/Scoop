@@ -1,20 +1,20 @@
 {
     "homepage": "https://github.com/8LWXpg/ptr",
-    "version": "0.10.0",
+    "version": "0.11.0",
     "description": "PowerToys Run plugin manager",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.10.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
-            "hash": "24de2e2a85d5697889ddfdb7d0f9f79cc7f47cfbc44acc6c22d6fabf23f28286"
+            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.11.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
+            "hash": "f3d7cd80370659bbded4f29f7777bb42456aa46b78d251e78a116cc3cf941d0d"
         },
         "32bit": {
-            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.10.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
-            "hash": "24de2e2a85d5697889ddfdb7d0f9f79cc7f47cfbc44acc6c22d6fabf23f28286"
+            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.11.0/ptr-x86_64-pc-windows-msvc.zip#/dl.7z",
+            "hash": "f3d7cd80370659bbded4f29f7777bb42456aa46b78d251e78a116cc3cf941d0d"
         },
         "arm64": {
-            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.10.0/ptr-aarch64-pc-windows-msvc.zip#/dl.7z",
-            "hash": "61c8806dd7e693ab171885deace5414b726e2388cbb55735843393747a3a7ece"
+            "url": "https://github.com/8LWXpg/ptr/releases/download/v0.11.0/ptr-aarch64-pc-windows-msvc.zip#/dl.7z",
+            "hash": "104e04648d1ae3d1885df5495be30d843f163ec9348b9ff3fb0c6262316164b4"
         }
     },
     "bin": "ptr.exe",
