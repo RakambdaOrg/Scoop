@@ -19,12 +19,12 @@ jobs:
         shell: ${{ matrix.shell }}
     steps:
       - name: Checkout Bucket
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 2
           path: 'self_bucket'
       - name: Checkout Scoop
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.2
         with:
           repository: ScoopInstaller/Scoop
           path: 'scoop_core'
