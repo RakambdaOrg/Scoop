@@ -1,0 +1,19 @@
+{
+  "version" : "0.0.1",
+  "description" : "Rakambda's themes for Oh-My-Posh",
+  "homepage" : "https://ohmyposh.dev",
+  "license" : "MIT",
+  "notes" : "Refer to 'https://ohmyposh.dev/docs/installation/prompt' for shell specific configurations.",
+  "url" : "https://github.com/RakambdaOrg/OhMyPoshThemes/releases/download/0.0.1/themes.zip",
+  "hash" : "465d14e68b79795b02d8cefe84a16786671c0cc9fb2bcc23f167cd11e2493681",
+  "depends" : "oh-my-posh",
+  "checkver" : {
+    "github" : "https://github.com/RakambdaOrg/OhMyPoshThemes"
+  },
+  "autoupdate" : {
+    "url" : "https://github.com/RakambdaOrg/OhMyPoshThemes/releases/download/$version/themes.zip",
+    "hash" : {
+      "url" : "$url.sha256"
+    }
+  }
+}
