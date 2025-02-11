@@ -1,0 +1,62 @@
+Windows Registry Editor Version 5.00
+
+;RegisteredApplications
+;----------------------
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"eMClient"="Software\\Clients\\Mail\\eMClient\\Capabilities"
+
+;------------------------------------------------------------------------
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient]
+@="eMClient"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities]
+"ApplicationDescription"="Best email client for Windows and Mac"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities\FileAssociations]
+".eml"="eMClient.eml"
+".msg"="eMClient.msg"
+".vcf"="eMClient.vcf"
+".ics"="eMClient.ics"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities\UrlAssociations]
+"mailto"="eMClient.mailto"
+
+;EML File Type Handler
+;---------------------
+[HKEY_CLASSES_ROOT\eMClient.eml]
+@="eMClient EML Handler"
+
+[HKEY_CLASSES_ROOT\eMClient.eml\shell\open\command]
+@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+
+;MSG File Type Handler
+;---------------------
+[HKEY_CLASSES_ROOT\eMClient.msg]
+@="eMClient MSG Handler"
+
+[HKEY_CLASSES_ROOT\eMClient.msg\shell\open\command]
+@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+
+;VCF File Type Handler
+;---------------------
+[HKEY_CLASSES_ROOT\eMClient.vcf]
+@="eMClient VCF Handler"
+
+[HKEY_CLASSES_ROOT\eMClient.vcf\shell\open\command]
+@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+
+;ICS File Type Handler
+;---------------------
+[HKEY_CLASSES_ROOT\eMClient.ics]
+@="eMClient ICS Handler"
+
+[HKEY_CLASSES_ROOT\eMClient.ics\shell\open\command]
+@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+
+;MAILTO Protocol Handler
+;---------------------
+[HKEY_CLASSES_ROOT\eMClient.mailto]
+@="eMClient MAILTO Handler"
+
+[HKEY_CLASSES_ROOT\eMClient.mailto\shell\open\command]
+@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /mailurl \"%1\""
