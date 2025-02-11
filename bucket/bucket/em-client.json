@@ -8,7 +8,7 @@
     "'%AppData%\\eM Client'.",
     "You can point to the persist storage in 'Settings > General > Storage'.",
     "",
-    "Register eM Client to open supported files and mail links:",
+    "Register eM Client to open supported files and mail links (as root):",
     "'reg import \"$dir\\install-handlers.reg\"'"
   ],
   "url" : "https://www.emclient.com/dist/v10.1.4588/setup.msi",
@@ -23,7 +23,7 @@
   "post_install" : [
     "$dirpath = \"$dir\".Replace('\\', '\\\\')",
     "$exepath = \"$dir\\MailClient.exe\".Replace('\\', '\\\\')",
-    "'install-handlers' | ForEach-Object {",
+    "'install-handlers', 'uninstall-handlers' | ForEach-Object {",
     "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\em-client\\$_.reg\") {",
     "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\em-client\\$_.reg\"",
     "    $content = $content.Replace('$exeDir', $dirpath)",
@@ -35,6 +35,14 @@
     "  }",
     "}"
   ],
+  "uninstaller": {
+    "script": [
+      "if ($cmd -eq 'uninstall')",
+      "{",
+      "   reg import \"$dir\\uninstall-handlers.reg\" ",
+      "}"
+    ]
+  },
   "persist" : "data",
   "checkver" : {
     "url" : "https://www.emclient.com/release-history?os=win",
