@@ -6,7 +6,10 @@
   "notes" : [
     "Scoop doesn't persist your EmClient data, by default they are stored in:",
     "'%AppData%\\eM Client'.",
-    "You can point to the persist storage in 'Settings > General > Storage'."
+    "You can point to the persist storage in 'Settings > General > Storage'.",
+    "",
+    "Register eM Client to open supported files and mail links:",
+    "'reg import \"$dir\\install-handlers.reg\"'"
   ],
   "url" : "https://www.emclient.com/dist/v10.1.4588/setup.msi",
   "hash" : "ac537b11881cef1b416f2f0be94cb9591f39c9954f515b319abc248afbc78a4d",
@@ -16,6 +19,21 @@
       "MailClient.exe",
       "eM Client"
     ]
+  ],
+  "post_install" : [
+    "$dirpath = \"$dir\".Replace('\\', '\\\\')",
+    "$exepath = \"$dir\\MailClient.exe\".Replace('\\', '\\\\')",
+    "'install-handlers' | ForEach-Object {",
+    "  if (Test-Path \"$bucketsdir\\$bucket\\scripts\\em-client\\$_.reg\") {",
+    "    $content = Get-Content \"$bucketsdir\\$bucket\\scripts\\em-client\\$_.reg\"",
+    "    $content = $content.Replace('$exeDir', $dirpath)",
+    "    $content = $content.Replace('$exePath', $exepath)",
+    "    if ($global) {",
+    "      $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+    "    }",
+    "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+    "  }",
+    "}"
   ],
   "persist" : "data",
   "checkver" : {

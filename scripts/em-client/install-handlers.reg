@@ -2,23 +2,23 @@ Windows Registry Editor Version 5.00
 
 ;RegisteredApplications
 ;----------------------
-[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
 "eMClient"="Software\\Clients\\Mail\\eMClient\\Capabilities"
 
 ;------------------------------------------------------------------------
-[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient]
+[HKEY_CURRENT_USER\SOFTWARE\Clients\Mail\eMClient]
 @="eMClient"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities]
+[HKEY_CURRENT_USER\SOFTWARE\Clients\Mail\eMClient\Capabilities]
 "ApplicationDescription"="Best email client for Windows and Mac"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities\FileAssociations]
+[HKEY_CURRENT_USER\SOFTWARE\Clients\Mail\eMClient\Capabilities\FileAssociations]
 ".eml"="eMClient.eml"
 ".msg"="eMClient.msg"
 ".vcf"="eMClient.vcf"
 ".ics"="eMClient.ics"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\Mail\eMClient\Capabilities\UrlAssociations]
+[HKEY_CURRENT_USER\SOFTWARE\Clients\Mail\eMClient\Capabilities\UrlAssociations]
 "mailto"="eMClient.mailto"
 
 ;EML File Type Handler
@@ -27,7 +27,7 @@ Windows Registry Editor Version 5.00
 @="eMClient EML Handler"
 
 [HKEY_CLASSES_ROOT\eMClient.eml\shell\open\command]
-@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+@="\"$exePath\" /open \"%1\""
 
 ;MSG File Type Handler
 ;---------------------
@@ -35,7 +35,7 @@ Windows Registry Editor Version 5.00
 @="eMClient MSG Handler"
 
 [HKEY_CLASSES_ROOT\eMClient.msg\shell\open\command]
-@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+@="\"$exePath\" /open \"%1\""
 
 ;VCF File Type Handler
 ;---------------------
@@ -43,7 +43,7 @@ Windows Registry Editor Version 5.00
 @="eMClient VCF Handler"
 
 [HKEY_CLASSES_ROOT\eMClient.vcf\shell\open\command]
-@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+@="\"$exePath\" /open \"%1\""
 
 ;ICS File Type Handler
 ;---------------------
@@ -51,7 +51,7 @@ Windows Registry Editor Version 5.00
 @="eMClient ICS Handler"
 
 [HKEY_CLASSES_ROOT\eMClient.ics\shell\open\command]
-@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /open \"%1\""
+@="\"$exePath\" /open \"%1\""
 
 ;MAILTO Protocol Handler
 ;---------------------
@@ -59,4 +59,4 @@ Windows Registry Editor Version 5.00
 @="eMClient MAILTO Handler"
 
 [HKEY_CLASSES_ROOT\eMClient.mailto\shell\open\command]
-@="\"C:\\Users\\zerde\\scoop\\apps\\em-client\\current\\MailClient.exe\" /mailurl \"%1\""
+@="\"$exePath\" /mailurl \"%1\""
