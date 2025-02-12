@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
   "homepage" : "https://www.emclient.com/",
   "version" : "10.1.4588",
   "description" : "A full featured email client with a modern and easy to use interface.",

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
   "homepage" : "https://github.com/mienaiyami/yomikiru",
   "version" : "2.19.6",
   "description" : "An offline desktop reader for manga, comics, and novels",

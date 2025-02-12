@@ -1,26 +1,27 @@
 {
-    "homepage": "https://www.xyplorer.com/index.php",
-    "version": "26.80.0500",
-    "description": "A file manager for Windows.",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.xyplorer.com/LicenseXY.txt"
-    },
-    "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
-    "hash": "392fab91ed534469dfb3d12d334eb0a63a9dc4ec4b59802bb5ba9d270e3d6e52",
-    "bin": "XYplorer.exe",
-    "shortcuts": [
-        [
-            "XYplorer.exe",
-            "XYplorer"
-        ]
-    ],
-    "persist": "Data",
-    "checkver": {
-        "url": "https://www.xyplorer.com/download.php",
-        "re": "([\\d.]+),\\s*released"
-    },
-    "autoupdate": {
-        "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip"
-    }
+  "$schema" : "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+  "homepage" : "https://www.xyplorer.com/index.php",
+  "version" : "26.80.0500",
+  "description" : "A file manager for Windows.",
+  "license" : {
+    "identifier" : "Proprietary",
+    "url" : "https://www.xyplorer.com/LicenseXY.txt"
+  },
+  "url" : "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
+  "hash" : "392fab91ed534469dfb3d12d334eb0a63a9dc4ec4b59802bb5ba9d270e3d6e52",
+  "bin" : "XYplorer.exe",
+  "shortcuts" : [
+    [
+      "XYplorer.exe",
+      "XYplorer"
+    ]
+  ],
+  "persist" : "Data",
+  "checkver" : {
+    "url" : "https://www.xyplorer.com/download.php",
+    "re" : "([\\d.]+),\\s*released"
+  },
+  "autoupdate" : {
+    "url" : "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip"
+  }
 }

@@ -1,4 +1,5 @@
 {
+  "$schema" : "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
   "homepage" : "https://www.uwe-sieber.de/",
   "version" : "4.4.4",
   "description" : "USB Device Tree Viewer",
