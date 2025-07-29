@@ -9,6 +9,21 @@ ij_smart_tabs = true
 ij_visual_guides = none
 ij_wrap_on_typing = false
 
+[*.json]
+indent_style = space
+indent_size = 4
+ij_smart_tabs = false
+ij_json_keep_blank_lines_in_code = 0
+ij_json_keep_indents_on_empty_lines = false
+ij_json_keep_line_breaks = true
+ij_json_space_after_colon = true
+ij_json_space_after_comma = true
+ij_json_space_before_colon = false
+ij_json_space_before_comma = false
+ij_json_spaces_within_braces = false
+ij_json_spaces_within_brackets = false
+ij_json_wrap_long_lines = false
+
 [*.java]
 indent_style = tab
 ij_java_align_consecutive_assignments = false
@@ -266,7 +281,7 @@ ij_asciidoc_blank_lines_keep_after_header = 1
 ij_asciidoc_formatting_enabled = true
 ij_asciidoc_one_sentence_per_line = true
 
-[{*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.stylelintrc,bowerrc,jest.config,mcmod.info,pack.mcmeta}]
+[{*.har,*.jsb2,*.jsb3,.babelrc,.eslintrc,.stylelintrc,bowerrc,jest.config,mcmod.info,pack.mcmeta}]
 ij_smart_tabs = false
 ij_json_keep_blank_lines_in_code = 0
 ij_json_keep_indents_on_empty_lines = false
