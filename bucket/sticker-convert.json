@@ -15,8 +15,8 @@
         ]
     ],
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\config.json\")) { New-Item \"$dir\\config.json\" | Out-Null } # creates config file config.json if doesn't exist",
-        "if (!(Test-Path \"$persist_dir\\creds.json\")) { New-Item \"$dir\\creds.json\" | Out-Null } # creates config file creds.json if doesn't exist"
+        "if (!(Test-Path \"$persist_dir\\config.json\")) { Set-Content \"$dir\\config.json\" -Value '{}' -Encoding 'utf8' -Force } # creates config file config.json if doesn't exist",
+        "if (!(Test-Path \"$persist_dir\\creds.json\")) { Set-Content \"$dir\\creds.json\" -Value '{}' -Encoding 'utf8' -Force } # creates config file creds.json if doesn't exist"
     ],
     "persist": [
         "stickers_input",
