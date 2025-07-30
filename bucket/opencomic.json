@@ -13,7 +13,6 @@
             "OpenComic"
         ]
     ],
-    "persist": "storage",
     "env_set": {
         "PORTABLE_EXECUTABLE_DIR": "$persist_dir"
     },
