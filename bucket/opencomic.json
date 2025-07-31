@@ -13,9 +13,7 @@
             "OpenComic"
         ]
     ],
-    "env_set": {
-        "PORTABLE_EXECUTABLE_DIR": "$persist_dir"
-    },
+    "persist": "storage",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/ollm/OpenComic/releases/download/v$version/OpenComic-Folder-Portable-$version.7z#/dl.7z"
