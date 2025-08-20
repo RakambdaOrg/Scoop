@@ -6,7 +6,7 @@
     "license": "MIT",
     "url": "https://github.com/markterence/discord-quest-completer/releases/download/2025.08.11/discord-quest-completer-win32-x64-2025.08.11.zip#/dl.7z",
     "hash": "20354b416e0a5bb3eed6e8573812406da462a5e10f84fa1b5563b590129d8e37",
-    "extract_dir": "build/discord-quest-completer-win32-x64-$version",
+    "extract_dir": "build\\discord-quest-completer-win32-x64-$version",
     "bin": "discord-quest-completer.exe",
     "shortcuts": [
         [
