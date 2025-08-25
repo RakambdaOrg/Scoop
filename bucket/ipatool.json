@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "homepage": "https://github.com/majd/ipatool",
+    "version": "2.2.0",
+    "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store",
+    "license": "MIT",
+    "url": "https://github.com/majd/ipatool/releases/download/v2.2.0/ipatool-2.2.0-windows-amd64.tar.gz#/dl.7z",
+    "hash": "660b77a49045ee104a504ac2411f0b1b438238bcf257a978602e6f0103e52d44",
+    "extract_dir": "bin",
+    "bin": "ipatool-2.2.0-windows-amd64.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-amd64.tar.gz#/dl.7z",
+        "bin": "ipatool-$version-windows-amd64.exe"
+    }
+}
