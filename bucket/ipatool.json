@@ -4,13 +4,30 @@
     "version": "2.2.0",
     "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store",
     "license": "MIT",
-    "url": "https://github.com/majd/ipatool/releases/download/v2.2.0/ipatool-2.2.0-windows-amd64.tar.gz#/dl.tar.gz",
-    "hash": "660b77a49045ee104a504ac2411f0b1b438238bcf257a978602e6f0103e52d44",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/majd/ipatool/releases/download/v2.2.0/ipatool-2.2.0-windows-amd64.tar.gz",
+            "hash": "660b77a49045ee104a504ac2411f0b1b438238bcf257a978602e6f0103e52d44",
+            "bin": "ipatool-2.2.0-windows-amd64.exe"
+        },
+        "arm64": {
+            "url": "https://github.com/majd/ipatool/releases/download/v2.2.0/ipatool-2.2.0-windows-arm64.tar.gz",
+            "hash": "1fd5675d09597c635b1b466ae0e2fb3ec82d110c4f044ed997f2bee68a6d41e1",
+            "bin": "ipatool-2.2.0-windows-arm64.exe"
+        }
+    },
     "extract_dir": "bin",
-    "bin": "ipatool-2.2.0-windows-amd64.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-amd64.tar.gz#/dl.tar.gz",
-        "bin": "ipatool-$version-windows-amd64.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-amd64.tar.gz",
+                "bin": "ipatool-$version-windows-amd64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-arm64.tar.gz",
+                "bin": "ipatool-$version-windows-arm64.exe"
+            }
+        }
     }
 }
