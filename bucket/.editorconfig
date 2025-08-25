@@ -2,3 +2,4 @@
 indent_style = space
 indent_size = 4
 ij_json_space_before_colon = false
+insert_final_newline = false
