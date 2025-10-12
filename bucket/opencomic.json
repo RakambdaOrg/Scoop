@@ -1,11 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/ollm/OpenComic",
-    "version": "1.6.3",
+    "version": "1.6.4",
     "description": "Comic and Manga reader, written with Node.js and using Electron",
     "license": "GPL-3.0",
-    "url": "https://github.com/ollm/OpenComic/releases/download/v1.6.3/OpenComic-Folder-Portable-1.6.3.7z",
-    "hash": "93ab8573be9a466d1f727366e71d54a0b52b6d2806562b16bae0be75a523769c",
+    "url": "https://github.com/ollm/OpenComic/releases/download/v1.6.4/OpenComic-Folder-Portable-1.6.4.7z",
+    "hash": "bd000d7977f16247c6e869d0ee33ceee4a3b01c9dd6b06c4f579d600b88dea41",
     "bin": "opencomic.exe",
     "shortcuts": [
         [
