@@ -21,11 +21,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-amd64.tar.gz",
+                "url": "https://github.com/majd/ipatool/releases/download/v$version/ipatool-$version-windows-amd64.tar.gz",
                 "bin": "ipatool-$version-windows-amd64.exe"
             },
             "arm64": {
-                "url": "https://github.com/majd/ipatool/releases/releases/download/v$version/ipatool-$version-windows-arm64.tar.gz",
+                "url": "https://github.com/majd/ipatool/releases/download/v$version/ipatool-$version-windows-arm64.tar.gz",
                 "bin": "ipatool-$version-windows-arm64.exe"
             }
         }
