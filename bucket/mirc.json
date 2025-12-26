@@ -6,38 +6,19 @@
     "license": "Shareware",
     "url": "https://www.mirc.com/get.php#/dl.exe",
     "hash": "c4e001b16aefb94158c6ee0324491b843639548fe5facbb04a03f45b7e3847a9",
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\addrbk.ini\")) {",
-        "    New-Item \"$dir\\addrbk.ini\" -ItemType File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$dir\\channels.ini\")) {",
-        "    New-Item \"$dir\\channels.ini\" -ItemType File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$dir\\mirc.ini\")) {",
-        "    New-Item \"$dir\\mirc.ini\" -ItemType File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$dir\\servers.ini\")) {",
-        "    New-Item \"$dir\\servers.ini\" -ItemType File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$dir\\urls.ini\")) {",
-        "    New-Item \"$dir\\urls.ini\" -ItemType File | Out-Null",
-        "}"
-    ],
-    "post_install": [
-        "$iniFile=\"$dir\\mirc.ini\"",
-        "Write-Host \"Setting mIRC to run in portable mode\"",
-        "(Get-Content \"$iniFile\").Replace('portable=no', 'portable=yes') | Set-Content \"$iniFile\""
-    ],
     "installer": {
         "args": [
-            "/S",
-            "/D=$dir"
+            "-ArgumentList",
+            "\"/S /D=$dir\"",
+            "-Wait"
         ]
     },
     "uninstaller": {
         "file": "uninstall.exe",
         "args": [
-            "/S"
+            "-ArgumentList",
+            "\"/S\"",
+            "-Wait"
         ]
     },
     "bin": [
@@ -47,15 +28,12 @@
         [
             "mirc.exe",
             "mIRC",
-            "-portable"
+            "-noreg",
+            "-r\"$dir\\config\""
         ]
     ],
     "persist": [
-        "addrbk.ini",
-        "channels.ini",
-        "mirc.ini",
-        "urls.ini",
-        "servers.ini",
+        "config",
         "download",
         "logs",
         "scripts",
