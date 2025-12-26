@@ -25,8 +25,7 @@
         [
             "mirc.exe",
             "mIRC",
-            "-noreg",
-            "-r\"$dir\\config\""
+            "-noreg -r\"$dir\\config\""
         ]
     ],
     "persist": [
