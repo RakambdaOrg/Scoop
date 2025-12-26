@@ -13,7 +13,11 @@
         "    New-Item \"$iniFile\" -ItemType File | Out-Null",
         "}",
         "Write-Host \"Setting mIRC to run in portable mode\"",
-        "(Get-Content \"$iniFile\").Replace('portable=no', 'portable=yes').Replace('check=1', 'check=0') | Set-Content \"$iniFile\""
+        "(Get-Content \"$iniFile\").Replace('portable=no', 'portable=yes').Replace('check=1', 'check=0') | Set-Content \"$iniFile\"",
+        "$hasFilesDefinitions = Select-String -Quiet -Pattern \"[files]\" -Path \"iniFile\"",
+        "if (-not $hasFilesDefinitions) {",
+        "   Add-Content -Path \"$iniFile\" -Value \"[files]`r`nservers=configs/servers.ini`r`nurls=configs/urls.ini`r`naddrbk=configs/addrbk.ini`r`nchannels=configs/channels.ini\"",
+        "}"
     ],
     "installer": {
         "args": [
@@ -40,6 +44,8 @@
     "persist": [
         "mirc.ini",
         "servers.ini",
+        "channels",
+        "configs",
         "download",
         "logs",
         "scripts",
