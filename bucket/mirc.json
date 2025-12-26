@@ -9,6 +9,9 @@
     "installer": {
         "args": [
             "/S",
+            "/PORTABLE",
+            "/NOSHORTCUT",
+            "/NOUPDATE",
             "/D=$dir"
         ]
     },
