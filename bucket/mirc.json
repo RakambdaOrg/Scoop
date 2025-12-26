@@ -8,17 +8,14 @@
     "hash": "c4e001b16aefb94158c6ee0324491b843639548fe5facbb04a03f45b7e3847a9",
     "installer": {
         "args": [
-            "-ArgumentList",
-            "\"/S /D=$dir\"",
-            "-Wait"
+            "/S",
+            "/D=$dir"
         ]
     },
     "uninstaller": {
         "file": "uninstall.exe",
         "args": [
-            "-ArgumentList",
-            "\"/S\"",
-            "-Wait"
+            "/S"
         ]
     },
     "bin": [
