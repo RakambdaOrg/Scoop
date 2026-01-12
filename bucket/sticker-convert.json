@@ -1,11 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/laggykiller/sticker-convert",
-    "version": "2.17.0.0",
+    "version": "2.18.0.0",
     "description": "Convert (animated) stickers to/from WhatsApp, Telegram, Signal, Line, Kakao, Naver Band, OGQ, Viber, Discord, iMessage. Written in Python.",
     "license": "GPL-2.0",
-    "url": "https://github.com/laggykiller/sticker-convert/releases/download/v2.17.0.0/sticker-convert-windows-x86_64.zip",
-    "hash": "9f90b44f349b42973abcd69207a109c98b1536f1cdbb282b8cd07cc74c46ef57",
+    "url": "https://github.com/laggykiller/sticker-convert/releases/download/v2.18.0.0/sticker-convert-windows-x86_64.zip",
+    "hash": "7758b02cc7dee330ff7a17fde79d870cf15a109294f38952dfe48b4b0af0442c",
     "extract_dir": "sticker-convert",
     "bin": "sticker-convert.exe",
     "shortcuts": [
