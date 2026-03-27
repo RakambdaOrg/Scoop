@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.xyplorer.com/download/xyplorer64_full_noinstall.zip",
-            "hash": "bf174ad2fc0af7014ff383aacb0ef8c800df805e9c4cdf0c064d51c253f82008"
+            "hash": "22bf89610abd2b631d1ec950ff670fd6005e2ae24b9a8cc4376325fcd8c46ced"
         },
         "32bit": {
             "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
-            "hash": "bf174ad2fc0af7014ff383aacb0ef8c800df805e9c4cdf0c064d51c253f82008"
+            "hash": "b2262e65e9f7f1c229ab79dad675b63d519d782f82d0db4bfdf2d887bf51a4f3"
         }
     },
     "bin": "XYplorer.exe",
