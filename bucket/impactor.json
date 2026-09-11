@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/khcrysalis/Impactor",
-    "version": "2.6.1",
+    "version": "2.6.3",
     "description": "WIP feature rich iOS/tvOS sideloading application written in Rust.",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/khcrysalis/Impactor/releases/download/v2.6.1/Impactor-windows-x86_64-portable.exe",
-            "hash": "514cf3e63faa65c29a77783b3d4e6cbae52f455fbcdb76ebd63a7365ebdd39d6"
+            "url": "https://github.com/khcrysalis/Impactor/releases/download/v2.6.3/Impactor-windows-x86_64-portable.exe",
+            "hash": "8f25321dde88666f9d975b7ef976b70036055c173367fadc70791fdeee89664a"
         }
     },
     "bin": "Impactor-windows-x86_64-portable.exe",
