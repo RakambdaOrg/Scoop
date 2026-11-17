@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://www.xyplorer.com/index.php",
-    "version": "28.40",
+    "version": "28.50",
     "description": "A file manager for Windows.",
     "license": {
         "identifier": "Proprietary",
@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.xyplorer.com/download/xyplorer64_full_noinstall.zip",
-            "hash": "6bab4cc40c0ad0ca3593afbd07ab19795a1a400a8f7d8a023ba54abcf8b1bb7c"
+            "hash": "20748f3256fdc2519833123015201ded7c51d0b948d8c08cd11f6dba1581b645"
         },
         "32bit": {
             "url": "https://www.xyplorer.com/download/xyplorer_full_noinstall.zip",
